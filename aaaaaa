@@ -8,11 +8,12 @@ repeat task.wait() until game:IsLoaded()
 local fromRGB = Color3.fromRGB
 local newUDim2 = UDim2.new
 local newVector2 = Vector2.new
-local newInstance = Instance.new
 local remove = table.remove
 local spawn = task.spawn
 local genv = getgenv()
 local getupvalue = debug.getupvalue
+
+local newInstance = Instance.new
 
 local Signal={}local Connection={}Signal.__index=Signal
 Connection.__index=Connection
